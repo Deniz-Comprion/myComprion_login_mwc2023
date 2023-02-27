@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 /*********
@@ -14,9 +15,7 @@
 /* 20px = 20px/16px = 1.25rem
 /* Der Vorteil: Wenn man die Standard-Schriftgröße ändert, ändernt man alle Schriftgrößen gemneinsamer und behält dabei die Propotion 
 ********/
-* {
-  font-size: 16px;
-}
+
 
 body {
   color: #181818;
@@ -38,6 +37,7 @@ body {
 /* WICHTIG: Der Footer hat ebenfalls eine Hintergrundefarbe. Falls diese nicht harmonieren, einfach unter colors.css anpassen.
 ********/
 .body-overlay {
+  padding-top: 5rem;
   width: 100%;
   height: 100%;
   background:  var(--bg-body-overlay);
@@ -112,6 +112,7 @@ a:hover {
   object-fit: contain;
 }
 
+
 @media (max-width: 1000px) {
   * {
     font-size: 14px;
@@ -120,6 +121,7 @@ a:hover {
 
 @media (max-width: 800px) {
   * {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
+
