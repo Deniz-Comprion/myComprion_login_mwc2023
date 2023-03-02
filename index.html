@@ -21,13 +21,13 @@
           </span>
         </button>
       </div>
-      
+
       <div class="logo-container">
         <img src="./media/logos/COMPRION_RGB_1000px.png" alt="COMPRION Logo" />
       </div>
       <nav id="header-nav-main">
         <ul class="nav-items">
-          <li><a href="https://www.comprion.com/" target="_blank">Website</a></li>         
+          <li><a href="https://www.comprion.com/" target="_blank">Website</a></li>
           <li><a href="https://www.comprion.com/support/support/" target="_blank">Support</a></li>
           <li><a href="https://www.comprion.com/contact/overview/" target="_blank">Contact</a></li>
           <li><a href="https://www.comprion.com/career/" target="_blank">Career</a></li>
@@ -119,15 +119,17 @@
 
 
 <script>
-  let toggler = document.getElementById("nav-toggler");
-  let header = document.getElementById("header");
-  let menuToggler = document.querySelector(".menu-toggler-container");
+  document.addEventListener("DOMContentLoaded", function () {
+    let toggler = document.getElementById("nav-toggler");
+    let header = document.getElementById("header");
+    let menuToggler = document.querySelector(".menu-toggler-container");
 
-  toggler.addEventListener("click", navToggler);
+    toggler.addEventListener("click", navToggler);
 
-  function navToggler() {
-    toggler.classList.toggle("is-active");
-    header.classList.toggle("nav-open");
-    menuToggler.classList.toggle("menu-toggler-container-active")
-  }
+    function navToggler() {
+      toggler.classList.toggle("is-active");
+      header.classList.toggle("nav-open");
+      menuToggler.classList.toggle("menu-toggler-container-active")
+    }
+  });
 </script>
